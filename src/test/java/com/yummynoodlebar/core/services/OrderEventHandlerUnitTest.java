@@ -47,7 +47,7 @@ public class OrderEventHandlerUnitTest {
     uut.createOrder(ev);
     uut.createOrder(ev);
 
-    verify(mockOrdersMemoryRepository, times(3)).save(any(Order.class));
+    verify(mockOrdersMemoryRepository, times(2)).save(any(Order.class));
     verifyNoMoreInteractions(mockOrdersMemoryRepository);
   }
 
